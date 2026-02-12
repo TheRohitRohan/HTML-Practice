@@ -1,0 +1,125 @@
+| Name        | Class Prefix | Screen Width |
+| ----------- | ------------ | ------------ |
+| Extra small | -         | <576px       |
+| Small       | -sm-      | ≥576px       |
+| Medium      | -md-      | ≥768px       |
+| Large       | -lg-      | ≥992px       |
+| Extra large | -xl-      | ≥1200px      |
+| XXL         | -xxl-     | ≥1400px      |
+
+{property}{side}-{size} mb-3
+Property
+    m = margin
+    p = padding
+-Side
+    t top
+    b bottom
+    s start (left in LTR)
+    e end (right in LTR)
+    x left + right
+    y top + bottom
+Size = 0 to 5
+
+larger break point will always overwrite small one.
+
+.container-fluid for a full width container, spanning the entire width of the viewport.
+
+Grid System: 12-column flexbox-based system; Divide each row into 12 parts.
+
+row have negative margin so it needs padding of container thats why 
+container
+ └── row
+      └── col
+
+col class:
+    -col: auto - Evenly split each column in row
+    -col-6: fixed size for each viewport
+    -col-6 col-mg-4 col-lg-2: Responsive
+
+If specified col-lg-8 that means on screen lg and bigger will have 8 column width and small will have full width of comtainer.
+
+Sum ≤ 12 per row else it will wrap to botom 
+
+Vertical alignment:
+    for all column in row: row align-items- start/center/end
+    individual column : col align-self- start/center/end
+
+Horizontal alignment;
+    for all column in row: row justify-content- start/center/end/around/between/evenly
+    
+Reordering:.order- classes for controlling the visual order of your content
+    -order-1 through 5 across all six grid tiers. Also order-first, order-last 
+
+
+Offset Columns: it will leave space for offset
+    <div class="col-md-4 offset-2"> here shift 4 column to right 
+
+
+row-cols-1 to 12 : it defines at row level how many column grid you want 
+    <div class="row row-cols-2"> here no meter how many columns are under this row in layout only 2 col pr row 
+    -row-cols-breakpoins-2
+
+Gutters: padding between columns
+    g-0:no padding
+    g-1 to 5 : Horizontal & Vertical gutters same
+    gx-1 to 5 :Horizontal gutters
+    gy-1 to 5 :Vertical gutters
+    breakpoins also works: g-2 g-lg-3 
+
+Tables: by adding class table
+
+color variants: it can be added to whole table, row or cell
+    table-primary: Blue
+    table-secondary: Gray
+    table-success: Green
+    table-danger: Red
+    table-warning: Yellow
+    table-info: cyan/teal(sky)
+    table-light: vary light gray
+    table-dark: Dark Gray/black
+
+.table-striped:  add zebra-striping to any table row within the <tbody> 
+    -.table-striped-columns
+
+.table-hover: enable a hover state on table rows within a <tbody>
+
+.table-bordered: add borders on all sides of the table and cells
+
+.table-borderless: removes all borders
+
+.table-sm: makes table smaller by cuting padding in half
+
+.table-responsive: need to wrap table in div with this class 
+    -when ovweflow it will add scrollbar
+    -breakpoint: table-responsive-md : here Scrollable only below md.
+
+Form input in Bootstrap
+
+.form-label
+
+.form-control form-control-sm form-control-lg 
+    - text
+    - email
+    - password
+    - number
+    - file Input
+    - color : Form-control-color
+    - url
+
+.form-check: form-check-input form-check-label
+    -checkbox
+    -redio
+
+.form-select
+
+.form-range
+
+
+input-group
+    .input-group-text : to add text in group
+
+form-floating : Label floats inside input → moves up when typing.
+    -input must have placeholder 
+    -input before label
+
+data-bs-dismiss=
