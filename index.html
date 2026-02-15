@@ -4,164 +4,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basics Of HTml</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Flipkart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <ul>
-        <li> <a href="#"> link1 </a> </li>
-        <li> <a href="#"> link1 </a> </li>
-        <li> <a href="#"> link1 </a> </li>
-        <li> <a href="#"> link1 </a> </li>
-        <li> <a href="#"> link1 </a> </li>
-    </ul>
-    <div class="parent">
-        parent<a href="#"> link1 </a>
-        <div class="one">one</div>
-        <div class="two">two</div>
-        <div class="three">three</div>
-        <div class="four">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At voluptatum, nobis culpa sit quaerat omnis
-                deserunt repellat corrupti, ratione consequatur iure nemo labore, odit cumque adipisci modi veritatis
-                odio. Aut?
-            </p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand p-0" href="#">
+                <img src="Assets/logo.png" height="39" alt="logo">
+            </a>
+            <form class="d-flex w-50 me-3">
+                <div class="input-group">
+                    <input class="form-control rounded-0" type="text"
+                        placeholder="Search for products, brands and more">
+                    <button class="btn btn-light rounded-0" type="submit">
+                        <i class="fa-solid fa-magnifying-glass text-primary"></i>
+                    </button>
+                </div>
+            </form>
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#rightMenu"
+                aria-controls="rightMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="rightMenu">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item">
+                        <button class="btn btn-light text-primary rounded-0 mx-2 px-4">
+                            Login
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Become a Seller</a></li>
+                            <li><a class="dropdown-item" href="#">Notification Settings</a></li>
+                            <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
+                            <li><a class="dropdown-item" href="#">Advertise</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="ps-2">Cart</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <span data-ascd="false">fdapsdmsdgm</span>
-        <span class="zero">fdapsdmsdgm</span>
-        <span data-ascd="true">fdapsdmsdgm</span>
+    </nav>
 
+    <!-- Category Bar -->
+    <div class="category-bar bg-white shadow-sm">
+        <div class="container">
+            <div class="category-scroll">
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/offer.jpeg" alt="Top Offer">
+                    <p class="mb-0 small">Top Offers</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Grocery.png" alt="Grocery">
+                    <p class="mb-0 small">Grocery</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Mobiles.png" alt="Mobile">
+                    <p class="mb-0 small">Mobiles</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Fashion.png" alt="Fashion">
+                    <p class="mb-0 small">Fashion</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Electronics.png" alt="Electronics">
+                    <p class="mb-0 small">Electronics</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Home.png" alt="Home">
+                    <p class="mb-0 small">Home</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Appliances.jpg" alt="Appliances">
+                    <p class="mb-0 small">Appliances</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Travel.png" alt="Travel">
+                    <p class="mb-0 small">Travel</p>
+                </a>
+                <a href="#" class="category-item">
+                    <img class="img-fluid category-img" src="Assets/Toyes.png" alt="Toys">
+                    <p class="mb-0 small">Beauty, Toys & More</p>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <!--     
-    
-    <iframe src="https://www.google.com" frameborder="0"></iframe>
-    
-    <iframe width="420" height="315"
-src="https://www.youtube.com/embed/JMN0XbamRo8">
-</iframe>
-    
-    
-    
-    
-    &#169;
-    <form action="#" method="post" enctype="multipart/form-data">
-        <input type="search" name="" id="" placeholder="SEARCH">
-        <input type="url" placeholder="url" name="" id="">
-        <input type="file" name="" id="" multiple >
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <input type="checkbox" name="sfgasdfg" id="sfdafa" >
-        <input type="submit" value="">
-        <input type="reset">
+    <!-- Deals of the Day Section -->
+    <div class="container my-4">
+        <div class="row align-items-stretch">
+            <!-- Products Section -->
+            <div class="col-lg-9">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3">
+                                <h5 class="mb-0">Deals of the Day</h5>
+                                <small class="text-muted mb-0"><i class="fa-regular fa-clock"></i> 22 : 07 : 36 Left</small>
+                            </div>
+                            <button class="btn btn-primary btn-sm">VIEW ALL</button>
+                        </div>
+                        <hr class="mt-3 mb-4">
+                        <div class="position-relative">
+                            <!-- Scroll Buttons -->
+                            <button class="scroll-btn left" onclick="scrollDealsLeft()">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="scroll-btn right" onclick="scrollDealsRight()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <!-- Scroll Container -->
+                            <div class="deals-scroll d-flex">
+                                <!-- Product 1 -->
+                                <div class="deal-item">
+                                    <div class="card border-0 product-card h-100 text-center">
+                                        <img src="https://rukminim2.flixcart.com/image/266/187/xif0q/watch/e/y/p/-original-imahkeyzfetgtj8h.jpeg" class="card-img-top p-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title small">Casio, Fastrack...</h6>
+                                            <p class="text-success small mb-1">Up to 80% + Extra 10%</p>
+                                            <p class="text-muted small">Knockout Deals!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 2 -->
+                                <div class="deal-item">
+                                    <div class="card border-0 product-card h-100 text-center">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/p/z/e/16-20-0-49-mounted-wooden-temple-pooja-stand-with-storage-original-imahjd73py3hurz6.jpeg?q=70" class="card-img-top p-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title small">Home Temples</h6>
+                                            <p class="text-success small mb-1">Extra 10% Off</p>
+                                            <p class="text-muted small">Space Saving Furniture</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 3 -->
+                                <div class="deal-item">
+                                    <div class="card border-0 product-card h-100 text-center">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/w/i/j/m11-green-2025smart-arigato-original-imahga76kmwbfzcp.jpeg?q=70" class="card-img-top p-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title small">Premium Tablet Cases</h6>
+                                            <p class="text-success small mb-1">Extra 10% Off</p>
+                                            <p class="text-muted small">For All Top Models</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 4 -->
+                                <div class="deal-item">
+                                    <div class="card border-0 product-card h-100 text-center">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/wall-decoration/l/3/9/modern-3d-metal-ginkgo-leaf-design-wall-clocks-decorative-silent-original-imahdyas6udhvgqp.jpeg?q=70" class="card-img-top p-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title small">Best of Home Decor</h6>
+                                            <p class="text-success small mb-1">From ₹79</p>
+                                            <p class="text-muted small">Lowest Price Ever</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 5 -->
+                                <div class="deal-item">
+                                    <div class="card border-0 product-card h-100 text-center">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/a/h/c/xs-mw-turneck-halfsl-navy-metronaut-original-imagqg4hagpwhear.jpeg?q=70" class="card-img-top p-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title small">Metronaut, Provogue</h6>
+                                            <p class="text-success small mb-1">From ₹249 + Extra 10%</p>
+                                            <p class="text-muted small">Jackets, Dresses & More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 6 -->
+                                <div class="deal-item">
+                                    <div class="card border-0 product-card h-100 text-center">
+                                        <img src="http://rukminim2.flixcart.com/image/312/312/kvvad8w0/mobile/c/1/t/-original-imag8z7w3b42bjzy.jpeg?q=70" class="card-img-top p-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title small">LAVA A1500</h6>
+                                            <p class="text-success small mb-1">Flat ₹830 Off</p>
+                                            <p class="text-muted small">Now ₹999</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 7 -->
+                                <div class="deal-item">
+                                    <div class="card border-0 product-card h-100 text-center">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/v/v/6/300-poweredge-small-cricket-turf-bat-25-5-inch-for-kids-above-5-original-imahfsgwrdbvwkyh.jpeg?q=70" class="card-img-top p-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title small">Cricket Bats</h6>
+                                            <p class="text-success small mb-1">Up to 50% Off</p>
+                                            <p class="text-muted small">Best Deals</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Ad -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="card border-0 shadow-sm h-100 d-flex flex-column">
+                    <img src="Assets/ad.jpg" class="card-img-top banner-ad flex-grow-1" alt="Advertisement">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </form>
-    <picture></picture>
+    <!-- Books and Music Instruments Section -->
+    <div class="container my-4">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Books And Music Instruments</h5>
+                    <button class="btn btn-primary btn-sm">VIEW ALL</button>
+                </div>
+                <hr class="mt-3 mb-4">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+                    <!-- Product 1 - Harmonium -->
+                    <div class="col">
+                        <div class="card border-0 product-card h-100 text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/c/n/d/42-sch-42-musicale-store-original-imahj222hf53vryn.jpeg?q=70" class="card-img-top p-3">
+                            <div class="card-body">
+                                <h6 class="card-title small">Harmonium</h6>
+                                <p class="text-success small mb-1">Up to 45% Off</p>
+                                <p class="text-muted small">42 Keys</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 - Flute -->
+                    <div class="col">
+                        <div class="card border-0 product-card h-100 text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/ki214sw0-0/flute/c/k/r/a-scale-flute-blue-panther-original-imafxxggf4k5gkwp.jpeg?q=70" class="card-img-top p-3">
+                            <div class="card-body">
+                                <h6 class="card-title small">Bansuri Flute</h6>
+                                <p class="text-success small mb-1">Up to 55% Off</p>
+                                <p class="text-muted small">Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 - Acoustic Guitar -->
+                    <div class="col">
+                        <div class="card border-0 product-card h-100 text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/b/h/l/acoustic-guitar-kit-with-bag-strings-picks-strap-intern-original-imahe2akzaftt4yg.jpeg?q=70" class="card-img-top p-3">
+                            <div class="card-body">
+                                <h6 class="card-title small">Acoustic Guitar</h6>
+                                <p class="text-success small mb-1">Up to 35% Off</p>
+                                <p class="text-muted small">With Bag</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 - music accessories -->
+                    <div class="col">
+                        <div class="card border-0 product-card h-100 text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/guitar-string/p/u/i/6-guitar-string-set-with-guitar-capo-tuner-and-guitar-string-original-imahf9fehzefgp5f.jpeg?q=70" class="card-img-top p-3">
+                            <div class="card-body">
+                                <h6 class="card-title small">Music Accessories</h6>
+                                <p class="text-success small mb-1">Up to 25% Off</p>
+                                <p class="text-muted small">Adjustable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 - Microphone Accessories -->
+                    <div class="col">
+                        <div class="card border-0 product-card h-100 text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/microphone-accessory/0/f/n/notation-music-stand-techtest-original-imagz5whg2gvn9by.jpeg?q=70" class="card-img-top p-3">
+                            <div class="card-body">
+                                <h6 class="card-title small">Microphone Accessories</h6>
+                                <p class="text-success small mb-1">Up to 30% Off</p>
+                                <p class="text-muted small">Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 - Acoustic Guitar 2 -->
+                    <div class="col">
+                        <div class="card border-0 product-card h-100 text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/p/d/8/blue-acoustic-guitar-38-inch-cutaway-body-with-bag-strings-pick-original-imahdhm7wm3wexwd.jpeg?q=70" class="card-img-top p-3">
+                            <div class="card-body">
+                                <h6 class="card-title small">Acoustic Guitar</h6>
+                                <p class="text-success small mb-1">Up to 20% Off</p>
+                                <p class="text-muted small">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<svg width="200" height="120">
-  
-  <image href="Screenshot.png" height="100%" width="100%">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-    <circle cx="60" cy="60" r="40" fill="blue" />
-</svg>
-<a href="Screenshot.png" target="_blank" download=>Link</a>
-     <img 
-        src="Screenshot.png" 
-        alt="quit command"
-        height="50%"
-        width="50%"
-        >
-   <nav>
-        <ul>
-            <li> <a href="#"> link1 </a> </li>
-            <li> <a href="#"> link1 </a> </li>
-            <li> <a href="#"> link1 </a> </li>
-            <li> <a href="#"> link1 </a> </li>
-            <li> <a href="#"> link1 </a> </li>
-            <li> <a href="#"> link1 </a> </li>
-        </ul>
-    </nav>
-    <table>
-        <thead>
-            <th>Name</th>
-        </thead>
+    <script>
+        function scrollDealsRight() {
+            const container = document.querySelector('.deals-scroll');
+            container.scrollBy({
+                left: 400,
+                behavior: 'smooth'
+            });
+        }
 
-        <tbody>
-            <tr>
-                <td>Alice</td>
-                <td>95</td>
-            </tr>
-            <tr>
-                <td colspan="2"rowspan="2">Bob</td>
-                <td>88</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Bob</td>
-                <td>Bob</td>
-                <td>Bob</td>
-                <td colspan="2">Bob</td>
-            </tr>
-             <tr>
-                <td>Bob</td>
-                <td>Bob</td>
-                <td>Bob</td>
-                <td>Bob</td>
-                <td>Bob</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="6">Total : 2</td>
-            </tr>
-        </tfoot>
-    </table>
+        function scrollDealsLeft() {
+            const container = document.querySelector('.deals-scroll');
+            container.scrollBy({
+                left: -400,
+                behavior: 'smooth'
+            });
+        }
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
+        function updateScrollButtons() {
+            const container = document.querySelector('.deals-scroll');
+            const leftBtn = document.querySelector('.scroll-btn.left');
+            const rightBtn = document.querySelector('.scroll-btn.right');
+            
+            const maxScroll = container.scrollWidth - container.clientWidth;
+            
+            leftBtn.classList.toggle('visible', container.scrollLeft > 0);
+            rightBtn.classList.toggle('visible', container.scrollLeft < maxScroll - 10);
+        }
 
-    <ol>
-        <li>Install editor</li>
-        <li>Write HTML</li>
-        <li>Open browser</li>
-    </ol>
-
-    <dl>
-        <dt>HTML</dt>
-        <dd>Markup language for structure</dd>
-
-        <dt>CSS</dt>
-        <dd>Styling language</dd>
-    </dl>
-
-
-    <h1>H1</h1>
-    <h2>H2</h2>
-    <h3>H3</h3>
-    <h4>H4</h4>
-    <h5>H5</h5>
-    <h6>H6</h6>
-
-    
-    <pre>
-                   Hello World, 
-            this text is inside a pre tag, all white       spaces     are 
-
-
-        preserved
-    </pre>
-
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quae cupiditate, in sunt minus veniam velit
-        officia labore. Libero fuga amet repudiandae aut at voluptas facilis minima. Eaque, soluta eum!</p>
-    <hr>
-    <b>
-        <p>
-            Lorem ipsum dolor sit <i>amet consectetur adipisicing elit.</i> Laboriosam quae cupiditate, in sunt minus
-            veniam velit officia labore. Libero fuga amet repudiandae aut at voluptas facilis minima. Eaque, soluta eum!
-        </p>
-    </b> -->
+        document.querySelector('.deals-scroll').addEventListener('scroll', updateScrollButtons);
+        window.addEventListener('resize', updateScrollButtons);
+        window.addEventListener('load', updateScrollButtons);
+    </script>
 </body>
 
 </html>
